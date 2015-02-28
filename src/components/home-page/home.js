@@ -24,7 +24,7 @@ define(["knockout", "text!./home.html", "jquery", "jquerycookie"], function(ko, 
       function(returnedData)
         {
          console.log(returnedData);
-         $.cookie('token', '%22'+returnedData.token);
+         $.cookie('token', returnedData.token);
         }
     );
    };
@@ -34,12 +34,27 @@ define(["knockout", "text!./home.html", "jquery", "jquerycookie"], function(ko, 
    };
 
    this.isLoggedIn = function(){
-     $.get('http://fathomless-ocean-5983.herokuapp.com/api/users/me',
-       function(returnedData)
-         {
-          console.log(returnedData);
-        }
-     );
+     var tokenString = 'Bearer ' + $.cookie('token');
+
+    //  $.get('http://fathomless-ocean-5983.herokuapp.com/api/users/me',
+    //    function(returnedData)
+    //      {
+    //       console.log(returnedData);
+    //     }
+    //  );
+
+     $.ajax({
+        url: "http://fathomless-ocean-5983.herokuapp.com/api/users/me",
+        headers: {"Authorization": "Bearer " + $.cookie('token')}
+    })
+    .done(function (data) {
+      console.log(data);
+    })
+    .fail(function (jqXHR, textStatus) {
+      alert("error: " + textStatus);
+    });
+
+
     };
 
   return { viewModel: HomeViewModel, template: homeTemplate };
