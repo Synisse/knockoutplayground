@@ -24,7 +24,20 @@
         <li data-bind="css: { active: route().page === 'about-page' }">
           <a href="#about">About</a>
         </li>
+        <li data-bind="visible: isLoggedIn">
+          <a href="#" ><span data-bind="text: currentUser().name"></span></a>
+        </li>
       </ul>
+      <form class="navbar-form navbar-right" data-bind="visible: !isLoggedIn()">
+        <input type="text" data-bind="value: username" class="form-control"></input><span data-bind="text: username"></span>
+        <input type="text" data-bind="value: password" class="form-control"></input>
+        <button type="submit" class="btn btn-success" data-bind="click: login">Login</button>
+      </form>
+      <form class="navbar-form navbar-right" data-bind="visible: isLoggedIn()">
+        <!-- <ul class="nav navbar-nav"> -->
+          <button class="btn btn-danger" type="submit" data-bind="click: logout">Logout <span data-bind="text: currentUser().name"></span></button>
+        <!-- </ul> -->
+      </form>
 
     </div>
   </div>

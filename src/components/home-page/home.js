@@ -8,13 +8,14 @@ define(["knockout", "text!./home.html", "jquery", "jquerycookie"], function(ko, 
     this.message('You invoked doSomething() on the viewmodel.');
   };
 
+  var self = this;
   // function make_base_auth(user, password) {
   //     var tok = user + ':' + password;
   //     var hash = btoa(tok);
   //     return 'Basic ' + hash;
   // }
 
-  this.username = 'no one';
+  self.username = ko.observable("no one");
 
   this.login = function(){
     $.post('http://fathomless-ocean-5983.herokuapp.com/auth/local', {
@@ -49,6 +50,7 @@ define(["knockout", "text!./home.html", "jquery", "jquerycookie"], function(ko, 
     })
     .done(function (data) {
       console.log(data);
+      self.username(data.name);
     })
     .fail(function (jqXHR, textStatus) {
       alert("error: " + textStatus);
