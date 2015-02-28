@@ -2,12 +2,118 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 10, sass/styles.scss */
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+/* line 17, sass/styles.scss */
+body {
+  font-family: 'Righteous', cursive;
+}
+
+/* line 21, sass/styles.scss */
 #page {
   margin-top: 80px;
 }
 
-/* line 14, sass/styles.scss */
+/* line 25, sass/styles.scss */
 .testdiv {
-  background-color: #33FFFF;
+  background-color: #1C1F1C;
+}
+
+/* line 29, sass/styles.scss */
+.navminheight {
+  height: 400px;
+}
+
+/* line 38, sass/styles.scss */
+.navbar-default {
+  background-color: #1c1f1c;
+  border-color: #497049;
+}
+/* line 41, sass/styles.scss */
+.navbar-default .navbar-brand {
+  color: #ffffff;
+}
+/* line 43, sass/styles.scss */
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #ffffff;
+}
+/* line 45, sass/styles.scss */
+.navbar-default .navbar-text {
+  color: #ffffff;
+}
+/* line 49, sass/styles.scss */
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+}
+/* line 51, sass/styles.scss */
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff;
+}
+/* line 65, sass/styles.scss */
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: #497049;
+}
+/* line 69, sass/styles.scss */
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #ffffff;
+  background-color: #497049;
+}
+/* line 72, sass/styles.scss */
+.navbar-default .navbar-toggle {
+  border-color: #497049;
+}
+/* line 74, sass/styles.scss */
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #497049;
+}
+/* line 76, sass/styles.scss */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+/* line 78, sass/styles.scss */
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ffffff;
+}
+/* line 81, sass/styles.scss */
+.navbar-default .navbar-link {
+  color: #ffffff;
+}
+/* line 83, sass/styles.scss */
+.navbar-default .navbar-link:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  /* line 87, sass/styles.scss */
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+  /* line 89, sass/styles.scss */
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffffff;
+  }
+  /* line 92, sass/styles.scss */
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    background-color: #497049;
+  }
+}
+/* line 97, sass/styles.scss */
+.navbar-login {
+  width: 305px;
+  padding: 10px;
+  padding-bottom: 0px;
+}
+
+/* line 104, sass/styles.scss */
+.navbar-login-session {
+  padding: 10px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+/* line 111, sass/styles.scss */
+.icon-size {
+  font-size: 87px;
 }
