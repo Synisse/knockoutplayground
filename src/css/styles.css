@@ -6,131 +6,140 @@
 /* line 18, sass/styles.scss */
 body {
   font-family: 'Righteous', cursive;
+  color: white;
+  background-color: #1C1F1C;
 }
 
-/* line 22, sass/styles.scss */
+/* line 24, sass/styles.scss */
+.component-background {
+  background-color: #262925;
+  margin-top: -40px;
+}
+
+/* line 29, sass/styles.scss */
 footer {
   background-color: #1C1F1C;
   color: white;
+  border-top: 1px solid #497049;
 }
 
-/* line 27, sass/styles.scss */
+/* line 35, sass/styles.scss */
 .footer-content {
   text-align: center;
   margin: 50px;
 }
 
-/* line 32, sass/styles.scss */
+/* line 40, sass/styles.scss */
 #page {
   margin-top: 80px;
 }
 
-/* line 36, sass/styles.scss */
+/* line 44, sass/styles.scss */
 .testdiv {
   background-color: #1C1F1C;
 }
 
-/* line 40, sass/styles.scss */
+/* line 48, sass/styles.scss */
 .navminheight {
   height: 400px;
 }
 
-/* line 49, sass/styles.scss */
+/* line 57, sass/styles.scss */
 .navbar-default {
   background-color: #1c1f1c;
   border-color: #497049;
 }
-/* line 52, sass/styles.scss */
+/* line 60, sass/styles.scss */
 .navbar-default .navbar-brand {
   color: #ffffff;
 }
-/* line 54, sass/styles.scss */
+/* line 62, sass/styles.scss */
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
   color: #ffffff;
 }
-/* line 56, sass/styles.scss */
+/* line 64, sass/styles.scss */
 .navbar-default .navbar-text {
   color: #ffffff;
 }
-/* line 60, sass/styles.scss */
+/* line 68, sass/styles.scss */
 .navbar-default .navbar-nav > li > a {
   color: #ffffff;
 }
-/* line 62, sass/styles.scss */
+/* line 70, sass/styles.scss */
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: #ffffff;
 }
-/* line 76, sass/styles.scss */
+/* line 84, sass/styles.scss */
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #ffffff;
   background-color: #497049;
 }
-/* line 80, sass/styles.scss */
+/* line 88, sass/styles.scss */
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
   color: #ffffff;
   background-color: #497049;
 }
-/* line 83, sass/styles.scss */
+/* line 91, sass/styles.scss */
 .navbar-default .navbar-toggle {
   border-color: #497049;
 }
-/* line 85, sass/styles.scss */
+/* line 93, sass/styles.scss */
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
   background-color: #497049;
 }
-/* line 87, sass/styles.scss */
+/* line 95, sass/styles.scss */
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #ffffff;
 }
-/* line 89, sass/styles.scss */
+/* line 97, sass/styles.scss */
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
   border-color: #ffffff;
 }
-/* line 92, sass/styles.scss */
+/* line 100, sass/styles.scss */
 .navbar-default .navbar-link {
   color: #ffffff;
 }
-/* line 94, sass/styles.scss */
+/* line 102, sass/styles.scss */
 .navbar-default .navbar-link:hover {
   color: #ffffff;
 }
 
 @media (max-width: 767px) {
-  /* line 98, sass/styles.scss */
+  /* line 106, sass/styles.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #ffffff;
   }
-  /* line 100, sass/styles.scss */
+  /* line 108, sass/styles.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #ffffff;
   }
-  /* line 103, sass/styles.scss */
+  /* line 111, sass/styles.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #ffffff;
     background-color: #497049;
   }
 }
-/* line 108, sass/styles.scss */
+/* line 116, sass/styles.scss */
 .navbar-login {
   width: 305px;
   padding: 10px;
   padding-bottom: 0px;
 }
 
-/* line 115, sass/styles.scss */
+/* line 123, sass/styles.scss */
 .navbar-login-session {
   padding: 10px;
   padding-bottom: 0px;
   padding-top: 0px;
 }
 
-/* line 122, sass/styles.scss */
+/* line 130, sass/styles.scss */
 .icon-size {
   font-size: 87px;
 }
 
-/* line 127, sass/styles.scss */
+/* line 135, sass/styles.scss */
 .glyphicon-refresh-animate {
   -animation: spin .7s infinite linear;
   -webkit-animation: spin2 .7s infinite linear;
@@ -152,7 +161,7 @@ footer {
     transform: scale(1) rotate(360deg);
   }
 }
-/* line 1, sass/home.scss */
+/* line 1, sass/_home.scss */
 .main-background {
   width: 100%;
   height: 500px;
@@ -162,7 +171,7 @@ footer {
   margin-top: -40px;
 }
 
-/* line 20, sass/home.scss */
+/* line 20, sass/_home.scss */
 .main-text {
   font-weight: bold;
   font-size: 30px;
@@ -170,7 +179,7 @@ footer {
   margin-top: 20%;
 }
 
-/* line 27, sass/home.scss */
+/* line 27, sass/_home.scss */
 .get-started-button {
   border: solid 2px #68BB68;
   border-radius: 10px;
@@ -181,7 +190,7 @@ footer {
   padding: 5px;
 }
 
-/* line 44, sass/home.scss */
+/* line 44, sass/_home.scss */
 .get-started-button:hover {
   border: solid 2px #497049;
   color: #497049;

@@ -20,7 +20,8 @@ var requireJsRuntimeConfig = vm.runInNewContext(fs.readFileSync('src/app/require
             'requireLib',
             'components/nav-bar/nav-bar',
             'components/home-page/home',
-            'text!components/about-page/about.html'
+            'text!components/about-page/about.html',
+            'components/character-page/character-page'
         ],
         insertRequire: ['app/startup'],
         bundles: {
@@ -71,11 +72,11 @@ gulp.task('clean', function() {
         .pipe(clean());
 });
 
-gulp.task('default', ['html', 'js', 'css', 'sass'], function(callback) {
+gulp.task('default', ['html', 'js', 'css'], function(callback) {
     callback();
     console.log('\nPlaced optimized files in ' + chalk.magenta('dist/\n'));
 });
 
 gulp.task('watch', ['html','js','css','sass'], function(){
-  gulp.watch()
+  gulp.watch();
 });

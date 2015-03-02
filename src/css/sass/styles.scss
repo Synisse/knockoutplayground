@@ -17,11 +17,19 @@ $dark:#157515;
 
 body{
   font-family: 'Righteous', cursive;
+  color: white;
+  background-color: $main;
+}
+
+.component-background{
+  background-color: $lightmain;
+  margin-top: -40px;
 }
 
 footer{
   background-color: $main;
   color: white;
+  border-top: 1px solid $bright;
 }
 
 .footer-content{
