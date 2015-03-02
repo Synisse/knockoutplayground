@@ -7,6 +7,7 @@
 @import url(https://fonts.googleapis.com/css?family=Righteous);
 
 $main: #1C1F1C;
+$lightmain: #262925;
 $superbright: #68BB68;
 $bright: #497049;
 // $light: #;
@@ -16,6 +17,16 @@ $dark:#157515;
 
 body{
   font-family: 'Righteous', cursive;
+}
+
+footer{
+  background-color: $main;
+  color: white;
+}
+
+.footer-content{
+  text-align: center;
+  margin: 50px;
 }
 
 #page{
@@ -112,3 +123,20 @@ $dropDown       : false;
 {
     font-size: 87px;
 }
+
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -webkit-animation: spin2 .7s infinite linear;
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
+
+@import 'home.scss';

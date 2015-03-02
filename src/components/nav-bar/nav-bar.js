@@ -1,4 +1,4 @@
-define(['knockout', 'text!./nav-bar.html', 'jquery'], function(ko, template, jquery) {
+define(['knockout', 'text!./nav-bar.html', 'jquery','jquerycookie','../../app/router'], function(ko, template, jquery, jquerycookie, router) {
 
   function NavBarViewModel(params) {
 
@@ -8,6 +8,7 @@ define(['knockout', 'text!./nav-bar.html', 'jquery'], function(ko, template, jqu
 
     var self = this;
 
+    //TODO remove dummy values
     self.username = ko.observable('stefankrueger@devsyn.de');
     self.password = ko.observable('123456');
 
@@ -18,6 +19,7 @@ define(['knockout', 'text!./nav-bar.html', 'jquery'], function(ko, template, jqu
       );
 
     self.isLoggedIn = ko.observable(false);
+    self.isLoggingIn = ko.observable(false);
 
     this.logout = function(){
       self.isLoggedIn(false);
@@ -30,28 +32,38 @@ define(['knockout', 'text!./nav-bar.html', 'jquery'], function(ko, template, jqu
 
     this.route = params.route;
 
+    //Function to login a user with the given credentials of the Login tab of the nav bar
     this.login = function(){
+
+      //Set to true, to start loading spinner
+      self.isLoggingIn(true);
+
       $.post('http://fathomless-ocean-5983.herokuapp.com/auth/local', {
         email: self.username(),
         password: self.password()
         },
         function(returnedData)
           {
-           console.log(returnedData);
+            //Set cookie for login token
            $.cookie('token', returnedData.token);
-
+           //Request user from backend
            $.ajax({
               url: "http://fathomless-ocean-5983.herokuapp.com/api/users/me",
+              //Set auth header
               headers: {"Authorization": "Bearer " + $.cookie('token')}
           })
           .done(function (data) {
-            console.log(data);
-            alert('hooray');
+            //On success set logging in to false (finishing loading animation)
+            self.isLoggingIn(false);
+            //On success safe userdata in view model variable
             self.currentUser(data);
+            //Set currentUser in "rootscope" (TODO cleanup this mess)
+            router.currentUser(self.currentUser().name);
+            //Set logged in to true, to change GUI components etc
             self.isLoggedIn(true);
-            console.log(self.currentUser().name);
           })
           .fail(function (jqXHR, textStatus) {
+            //Failed to retrieve user information with given token
             alert("error: " + textStatus);
           });
           }

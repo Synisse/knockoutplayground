@@ -12,12 +12,14 @@ define(["knockout", "crossroads", "hasher"], function(ko, crossroads, hasher) {
     return new Router({
         routes: [
             { url: '',          params: { page: 'home-page' } },
-            { url: 'about',     params: { page: 'about-page' } }
+            { url: 'about',     params: { page: 'about-page' } },
+            { url: 'character',     params: { page: 'character-page' } }
         ]
     });
 
     function Router(config) {
         var currentRoute = this.currentRoute = ko.observable({});
+        var currentUser = this.currentUser = ko.observable('userSetup');
 
         ko.utils.arrayForEach(config.routes, function(route) {
             crossroads.addRoute(route.url, function(requestParams) {

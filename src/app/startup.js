@@ -9,8 +9,10 @@ define(['jquery', 'knockout', './router', 'bootstrap', 'knockout-projections'], 
     template: { require: 'text!components/about-page/about.html' }
   });
 
+  ko.components.register('character-page', { require: 'components/character-page/character-page' });
+
   // [Scaffolded component registrations will be inserted here. To retain this feature, don't remove this comment.]
 
   // Start the application
-  ko.applyBindings({ route: router.currentRoute });
+  ko.applyBindings({ route: router.currentRoute, currentUser: router.currentUser });
 });

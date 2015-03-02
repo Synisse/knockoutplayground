@@ -3,117 +3,186 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url(https://fonts.googleapis.com/css?family=Righteous);
-/* line 17, sass/styles.scss */
+/* line 18, sass/styles.scss */
 body {
   font-family: 'Righteous', cursive;
 }
 
-/* line 21, sass/styles.scss */
+/* line 22, sass/styles.scss */
+footer {
+  background-color: #1C1F1C;
+  color: white;
+}
+
+/* line 27, sass/styles.scss */
+.footer-content {
+  text-align: center;
+  margin: 50px;
+}
+
+/* line 32, sass/styles.scss */
 #page {
   margin-top: 80px;
 }
 
-/* line 25, sass/styles.scss */
+/* line 36, sass/styles.scss */
 .testdiv {
   background-color: #1C1F1C;
 }
 
-/* line 29, sass/styles.scss */
+/* line 40, sass/styles.scss */
 .navminheight {
   height: 400px;
 }
 
-/* line 38, sass/styles.scss */
+/* line 49, sass/styles.scss */
 .navbar-default {
   background-color: #1c1f1c;
   border-color: #497049;
 }
-/* line 41, sass/styles.scss */
+/* line 52, sass/styles.scss */
 .navbar-default .navbar-brand {
   color: #ffffff;
 }
-/* line 43, sass/styles.scss */
+/* line 54, sass/styles.scss */
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
   color: #ffffff;
 }
-/* line 45, sass/styles.scss */
+/* line 56, sass/styles.scss */
 .navbar-default .navbar-text {
   color: #ffffff;
 }
-/* line 49, sass/styles.scss */
+/* line 60, sass/styles.scss */
 .navbar-default .navbar-nav > li > a {
   color: #ffffff;
 }
-/* line 51, sass/styles.scss */
+/* line 62, sass/styles.scss */
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: #ffffff;
 }
-/* line 65, sass/styles.scss */
+/* line 76, sass/styles.scss */
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #ffffff;
   background-color: #497049;
 }
-/* line 69, sass/styles.scss */
+/* line 80, sass/styles.scss */
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
   color: #ffffff;
   background-color: #497049;
 }
-/* line 72, sass/styles.scss */
+/* line 83, sass/styles.scss */
 .navbar-default .navbar-toggle {
   border-color: #497049;
 }
-/* line 74, sass/styles.scss */
+/* line 85, sass/styles.scss */
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
   background-color: #497049;
 }
-/* line 76, sass/styles.scss */
+/* line 87, sass/styles.scss */
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #ffffff;
 }
-/* line 78, sass/styles.scss */
+/* line 89, sass/styles.scss */
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
   border-color: #ffffff;
 }
-/* line 81, sass/styles.scss */
+/* line 92, sass/styles.scss */
 .navbar-default .navbar-link {
   color: #ffffff;
 }
-/* line 83, sass/styles.scss */
+/* line 94, sass/styles.scss */
 .navbar-default .navbar-link:hover {
   color: #ffffff;
 }
 
 @media (max-width: 767px) {
-  /* line 87, sass/styles.scss */
+  /* line 98, sass/styles.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #ffffff;
   }
-  /* line 89, sass/styles.scss */
+  /* line 100, sass/styles.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #ffffff;
   }
-  /* line 92, sass/styles.scss */
+  /* line 103, sass/styles.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #ffffff;
     background-color: #497049;
   }
 }
-/* line 97, sass/styles.scss */
+/* line 108, sass/styles.scss */
 .navbar-login {
   width: 305px;
   padding: 10px;
   padding-bottom: 0px;
 }
 
-/* line 104, sass/styles.scss */
+/* line 115, sass/styles.scss */
 .navbar-login-session {
   padding: 10px;
   padding-bottom: 0px;
   padding-top: 0px;
 }
 
-/* line 111, sass/styles.scss */
+/* line 122, sass/styles.scss */
 .icon-size {
   font-size: 87px;
+}
+
+/* line 127, sass/styles.scss */
+.glyphicon-refresh-animate {
+  -animation: spin .7s infinite linear;
+  -webkit-animation: spin2 .7s infinite linear;
+}
+
+@-webkit-keyframes spin2 {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: scale(1) rotate(0deg);
+  }
+  to {
+    transform: scale(1) rotate(360deg);
+  }
+}
+/* line 1, sass/home.scss */
+.main-background {
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(rgba(28, 31, 28, 0.85), rgba(28, 31, 28, 0.85)), url("../assets/images/dice.jpg");
+  background-position: center top;
+  background-size: cover;
+  margin-top: -40px;
+}
+
+/* line 20, sass/home.scss */
+.main-text {
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  margin-top: 20%;
+}
+
+/* line 27, sass/home.scss */
+.get-started-button {
+  border: solid 2px #68BB68;
+  border-radius: 10px;
+  background: linear-gradient(rgba(65, 30, 2, 0), rgba(65, 30, 2, 0));
+  color: #68BB68;
+  font-size: 25px;
+  margin-top: 35px;
+  padding: 5px;
+}
+
+/* line 44, sass/home.scss */
+.get-started-button:hover {
+  border: solid 2px #497049;
+  color: #497049;
 }

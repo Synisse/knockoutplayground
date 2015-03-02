@@ -1,0 +1,76 @@
+/*
+Error: Undefined variable: "$superbright".
+        on line 28 of c:/Users/stefan/Documents/dev/knockout/gcsc/src/css/sass/home.scss
+
+23:   color: white;
+24:   margin-top: 20%;
+25: }
+26: 
+27: .get-started-button{
+28:   border: solid 2px $superbright;
+29:   border-radius: 10px;
+30:   // background-color: $dark;
+31:   background:
+32:     /* top, transparent green, faked with gradient *\/
+33:     linear-gradient(
+
+Backtrace:
+c:/Users/stefan/Documents/dev/knockout/gcsc/src/css/sass/home.scss:28
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/script/tree/variable.rb:49:in `_perform'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/script/tree/node.rb:50:in `perform'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/script/tree/list_literal.rb:62:in `block in _perform'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/script/tree/list_literal.rb:62:in `map'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/script/tree/list_literal.rb:62:in `_perform'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/script/tree/node.rb:50:in `perform'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `map'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/tree/root_node.rb:20:in `render'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/engine.rb:268:in `render'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `each'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:328:in `block in watch'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:252:in `call'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+c:/ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.9/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$superbright\".\A         on line 28 of c:/Users/stefan/Documents/dev/knockout/gcsc/src/css/sass/home.scss\A \A 23:   color: white;\A 24:   margin-top: 20%;\A 25: }\A 26: \A 27: .get-started-button{\A 28:   border: solid 2px $superbright;\A 29:   border-radius: 10px;\A 30:   // background-color: $dark;\A 31:   background:\A 32:     /* top, transparent green, faked with gradient */\A 33:     linear-gradient("; }

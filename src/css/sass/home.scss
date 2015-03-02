@@ -1,0 +1,47 @@
+.main-background{
+  width: 100%;
+  height: 500px;
+  // background-color: $dark;
+
+  background:
+    /* top, transparent green, faked with gradient */
+    linear-gradient(
+      rgba(28, 31, 28, 0.85),
+      rgba(28, 31, 28, 0.85)
+    )
+    ,url("../assets/images/dice.jpg");
+
+  background-position: center top;
+  background-size: cover;
+
+  margin-top: -40px;
+}
+
+.main-text{
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  margin-top: 20%;
+}
+
+.get-started-button{
+  border: solid 2px $superbright;
+  border-radius: 10px;
+  // background-color: $dark;
+  background:
+    /* top, transparent green, faked with gradient */
+    linear-gradient(
+      rgba(65, 30, 2, 0.0),
+      rgba(65, 30, 2, 0.0)
+    );
+
+  color: $superbright;
+  font-size: 25px;
+  margin-top: 35px;
+  padding: 5px;
+}
+
+.get-started-button:hover{
+  border: solid 2px $bright;
+  color: $bright;
+}
