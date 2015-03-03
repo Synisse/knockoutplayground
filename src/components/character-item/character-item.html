@@ -1,3 +1,18 @@
-<h2>character-item</h2>
+<!-- <h2>character-item</h2> -->
 
-<p data-bind='text: character.name'></p>
+<!-- <p data-bind='text: character.name'></p> -->
+
+<div class="row">
+  <div class="col-md-12">
+
+      <div class="character-item">
+        <div class="character-name" data-bind="text: character.name">
+
+        </div>
+        <button class="btn btn-success" data-bind="click: routeToDetails">View</button>
+        <button class="btn btn-success">Edit</button>
+        <button class="btn btn-danger">Remove</button>
+      </div>
+
+  </div>
+</div>

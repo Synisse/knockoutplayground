@@ -10,7 +10,6 @@ define(['knockout', 'text!./character-page.html'], function(ko, templateMarkup) 
     })
     .done(function (data) {
        self.characterList(data);
-       console.log(self.characterList());
     })
     .fail(function (jqXHR, textStatus) {
       alert("error: " + textStatus);
@@ -21,6 +20,7 @@ define(['knockout', 'text!./character-page.html'], function(ko, templateMarkup) 
 
 
   self.characterList = ko.observableArray([]);
+  self.ownCharacterList = ko.observableArray([]);
 
   // This runs when the component is torn down. Put here any logic necessary to clean up,
   // for example cancelling setTimeouts or disposing Knockout subscriptions/computeds.

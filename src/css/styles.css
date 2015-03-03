@@ -195,3 +195,19 @@ footer {
   border: solid 2px #497049;
   color: #497049;
 }
+
+/* line 1, sass/_character-item.scss */
+.character-name {
+  color: #497049;
+}
+
+/* line 5, sass/_character-item.scss */
+.character-item {
+  background-color: #1C1F1C;
+}
+
+/* line 9, sass/_character-item.scss */
+a {
+  display: block;
+  text-decoration: none;
+}

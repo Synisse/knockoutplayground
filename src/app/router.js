@@ -13,7 +13,8 @@ define(["knockout", "crossroads", "hasher"], function(ko, crossroads, hasher) {
         routes: [
             { url: '',          params: { page: 'home-page' } },
             { url: 'about',     params: { page: 'about-page' } },
-            { url: 'character',     params: { page: 'character-page' } }
+            { url: 'character',     params: { page: 'character-page' } },
+            { url: 'character/{id}', params:{page: 'character-details', charid: 'id'}}
         ]
     });
 
