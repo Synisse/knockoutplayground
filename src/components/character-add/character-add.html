@@ -92,6 +92,7 @@
       </div>
 
     </div>
+
     <hr>
     <!-- Languagesection -->
     <div class="row">
@@ -108,7 +109,7 @@
             <div class="col-md-3 col-xs-3" data-bind="text: name"></div>
             <div class="col-md-3 col-xs-3" data-bind="text: written"></div>
             <div class="col-md-3 col-xs-3" data-bind="text: spoken"></div>
-            <div class="col-md-3 col-xs-3"><button class="btn btn-danger">Delete</button></div>
+            <div class="col-md-3 col-xs-3"><button class="btn btn-danger" data-bind="click: $parent.deleteLanguageFromList">Delete</button></div>
           </div>
           <hr>
         </div>
@@ -135,6 +136,94 @@
 
     </div>
 
+    <hr>
 
+    <!-- Advantages -->
+    <div class="row">
+      <div class="col-md-6">
+        <span class="language-heading">Advantages</span>
+        <div class="row">
+          <div class="col-md-3 col-xs-3">Name</div><div class="col-md-3 col-xs-3"></div>
+        </div>
+
+        <div class="language-list" data-bind="foreach: advantageList">
+          <div class="row">
+            <div class="col-md-3 col-xs-3" data-bind="text: $data"></div>
+            <div class="col-md-3 col-xs-3"><button class="btn btn-danger" data-bind="click: $parent.deleteAdvantageFromList">Delete</button></div>
+          </div>
+          <hr>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <span class="language-heading">Add your advantage</span>
+        <div class="input-group">
+          <div class="input-group-addon">Name</div>
+          <input type="text" data-bind="value: currentAdvantage" class="form-control">
+        </div>
+
+        <button class="add-button" data-bind="click: addCurrentAdvantageToList">Add advantage</button>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Disadvantages -->
+    <div class="row">
+      <div class="col-md-6">
+        <span class="language-heading">Disadvantages</span>
+        <div class="row">
+          <div class="col-md-3 col-xs-3">Name</div><div class="col-md-3 col-xs-3"></div>
+        </div>
+
+        <div class="language-list" data-bind="foreach: disadvantageList">
+          <div class="row">
+            <div class="col-md-3 col-xs-3" data-bind="text: $data"></div>
+            <div class="col-md-3 col-xs-3"><button class="btn btn-danger" data-bind="click: $parent.deleteDisadvantageFromList">Delete</button></div>
+          </div>
+          <hr>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <span class="language-heading">Add your disadvantage</span>
+        <div class="input-group">
+          <div class="input-group-addon">Name</div>
+          <input type="text" data-bind="value: currentDisadvantage" class="form-control">
+        </div>
+
+        <button class="add-button" data-bind="click: addCurrentDisadvantageToList">Add Disadvantage</button>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Skills -->
+    <div class="row">
+      <div class="col-md-6">
+        <span class="language-heading">Skills</span>
+        <div class="row">
+          <div class="col-md-3 col-xs-3">Name</div><div class="col-md-3 col-xs-3"></div>
+        </div>
+
+        <div class="language-list" data-bind="foreach: skillList">
+          <div class="row">
+            <div class="col-md-3 col-xs-3" data-bind="text: $data"></div>
+            <div class="col-md-3 col-xs-3"><button class="btn btn-danger" data-bind="click: $parent.deleteSkillFromList">Delete</button></div>
+          </div>
+          <hr>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <span class="language-heading">Add your skill</span>
+        <div class="input-group">
+          <div class="input-group-addon">Name</div>
+          <input type="text" data-bind="value: currentSkill" class="form-control">
+        </div>
+
+        <button class="add-button" data-bind="click: addCurrentSkillToList">Add Skill</button>
+      </div>
+    </div>
   </div>
 </div>
