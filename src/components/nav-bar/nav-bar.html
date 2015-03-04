@@ -25,13 +25,15 @@
           <a href="#about">About</a>
         </li>
 
-        <li data-bind="css: { active: route().page === 'character-page' }"> <!--, visible: isLoggedIn">-->
+        <li data-bind="css: { active: route().page.indexOf('character') > -1 }"> <!--, visible: isLoggedIn">-->
           <a href="#character">Character</a>
         </li>
         <!-- <li data-bind="visible: isLoggedIn">
           <a href="#" ><span data-bind="text: currentUser().name"></span></a>
         </li> -->
       </ul>
+
+
 
 <!--                    -->
 <!-- Login dropdown     -->
@@ -116,7 +118,12 @@
               </li>
         </ul>
 
-
+        <ul class="nav navbar-nav navbar-right" data-bind="visible: isLoggedIn()">
+          <li>
+            <a href="#addcharacter">Add Character</a>
+          </li>
+        </ul>
+        
     </div>
   </div>
 </div>

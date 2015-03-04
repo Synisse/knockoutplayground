@@ -23,6 +23,9 @@ define(['knockout', 'text!./nav-bar.html', 'jquery','jquerycookie','../../app/ro
 
     this.logout = function(){
       self.isLoggedIn(false);
+      //Set isLoggedIn in "rootscope" (TODO cleanup this mess)
+      router.isLoggedIn(self.isLoggedIn());
+      router.userId('');
       self.currentUser(
         {
           name:'default'
@@ -55,12 +58,14 @@ define(['knockout', 'text!./nav-bar.html', 'jquery','jquerycookie','../../app/ro
           .done(function (data) {
             //On success set logging in to false (finishing loading animation)
             self.isLoggingIn(false);
-            //On success safe userdata in view model variable
-            self.currentUser(data);
-            //Set currentUser in "rootscope" (TODO cleanup this mess)
-            router.currentUser(self.currentUser().name);
             //Set logged in to true, to change GUI components etc
             self.isLoggedIn(true);
+            //On success safe userdata in view model variable
+            self.currentUser(data);
+            //Set isLoggedIn in "rootscope" (TODO cleanup this mess)
+            router.isLoggedIn(self.isLoggedIn());
+            router.userId(self.currentUser()._id);
+
           })
           .fail(function (jqXHR, textStatus) {
             //Failed to retrieve user information with given token

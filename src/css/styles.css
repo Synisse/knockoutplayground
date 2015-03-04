@@ -13,7 +13,7 @@ body {
 /* line 24, sass/styles.scss */
 .component-background {
   background-color: #262925;
-  margin-top: -40px;
+  margin-top: -30px;
 }
 
 /* line 29, sass/styles.scss */
@@ -55,7 +55,7 @@ footer {
 }
 /* line 62, sass/styles.scss */
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #ffffff;
+  color: #e7e7e7;
 }
 /* line 64, sass/styles.scss */
 .navbar-default .navbar-text {
@@ -67,7 +67,7 @@ footer {
 }
 /* line 70, sass/styles.scss */
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #ffffff;
+  color: #e7e7e7;
 }
 /* line 84, sass/styles.scss */
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
@@ -76,7 +76,7 @@ footer {
 }
 /* line 88, sass/styles.scss */
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  color: #ffffff;
+  color: #e7e7e7;
   background-color: #497049;
 }
 /* line 91, sass/styles.scss */
@@ -102,7 +102,7 @@ footer {
 }
 /* line 102, sass/styles.scss */
 .navbar-default .navbar-link:hover {
-  color: #ffffff;
+  color: #e7e7e7;
 }
 
 @media (max-width: 767px) {
@@ -112,11 +112,11 @@ footer {
   }
   /* line 108, sass/styles.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #ffffff;
+    color: #e7e7e7;
   }
   /* line 111, sass/styles.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #ffffff;
+    color: #e7e7e7;
     background-color: #497049;
   }
 }
@@ -125,21 +125,27 @@ footer {
   width: 305px;
   padding: 10px;
   padding-bottom: 0px;
+  background-color: #1C1F1C;
 }
 
-/* line 123, sass/styles.scss */
+/* line 124, sass/styles.scss */
 .navbar-login-session {
   padding: 10px;
   padding-bottom: 0px;
   padding-top: 0px;
 }
 
-/* line 130, sass/styles.scss */
+/* line 132, sass/styles.scss */
+.dropdown-menu {
+  background-color: #1C1F1C;
+}
+
+/* line 136, sass/styles.scss */
 .icon-size {
   font-size: 87px;
 }
 
-/* line 135, sass/styles.scss */
+/* line 141, sass/styles.scss */
 .glyphicon-refresh-animate {
   -animation: spin .7s infinite linear;
   -webkit-animation: spin2 .7s infinite linear;
@@ -210,4 +216,50 @@ footer {
 a {
   display: block;
   text-decoration: none;
+}
+
+/* line 1, sass/_character-add.scss */
+.input-group-addon {
+  background-color: #497049;
+  border-color: #68BB68;
+  color: #FFFFFF;
+}
+
+/* line 7, sass/_character-add.scss */
+.form-control {
+  background-color: #1C1F1C;
+  color: #FFFFFF;
+}
+
+/* line 12, sass/_character-add.scss */
+.input-group {
+  margin-top: 20px;
+}
+
+/* line 16, sass/_character-add.scss */
+.add-button {
+  border: solid 2px #68BB68;
+  border-radius: 10px;
+  background: linear-gradient(rgba(65, 30, 2, 0), rgba(65, 30, 2, 0));
+  color: #68BB68;
+  font-size: 20px;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+/* line 32, sass/_character-add.scss */
+.add-button:hover {
+  border: solid 2px #497049;
+  color: #497049;
+}
+
+/* line 37, sass/_character-add.scss */
+.language-heading {
+  color: white;
+  font-size: 25px;
+}
+
+/* line 43, sass/_character-add.scss */
+.language-list .row {
+  margin-top: 10px;
 }

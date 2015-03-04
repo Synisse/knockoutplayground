@@ -14,13 +14,17 @@ define(["knockout", "crossroads", "hasher"], function(ko, crossroads, hasher) {
             { url: '',          params: { page: 'home-page' } },
             { url: 'about',     params: { page: 'about-page' } },
             { url: 'character',     params: { page: 'character-page' } },
-            { url: 'character/{id}', params:{page: 'character-details', charid: 'id'}}
+            { url: 'character/{id}', params:{page: 'character-details'}},
+            { url: 'character/{id}/edit', params:{page: 'character-edit'}},
+            { url: 'addcharacter', params:{page: 'character-add'}}
         ]
     });
 
     function Router(config) {
         var currentRoute = this.currentRoute = ko.observable({});
         var currentUser = this.currentUser = ko.observable('userSetup');
+        var isLoggedIn = this.isLoggedIn = ko.observable(false);
+        var userId = this.userId = ko.observable('');
 
         ko.utils.arrayForEach(config.routes, function(route) {
             crossroads.addRoute(route.url, function(requestParams) {

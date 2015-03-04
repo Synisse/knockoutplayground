@@ -1,0 +1,140 @@
+<!-- <h2>character-add</h2> -->
+<div class="component-background">
+  <div data-bind="visible: $root.isLoggedIn()">
+    <div>Is logged in</div>
+  </div>
+  <div data-bind="visible: !$root.isLoggedIn()">
+    <div>Is not logged in</div>
+  </div>
+
+  <div class="container">
+
+    <!-- Field: Name -->
+    <div class="row">
+      <div class="col-md-6 col-xs-12">
+        <div class="input-group">
+          <div class="input-group-addon">Name</div>
+          <input type="text" class="form-control">
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="row">
+
+      <!-- Strength -->
+      <div class="col-md-3 col-xs-6">
+        <div class="input-group">
+          <div class="input-group-addon">ST</div>
+          <input type="number" class="form-control">
+        </div>
+      </div>
+
+      <!-- Dex -->
+      <div class="col-md-3 col-xs-6">
+        <div class="input-group">
+          <div class="input-group-addon">DX</div>
+          <input type="number" class="form-control">
+        </div>
+      </div>
+
+      <!-- IQ -->
+      <div class="col-md-3 col-xs-6">
+        <div class="input-group">
+          <div class="input-group-addon">IQ</div>
+          <input type="number" class="form-control">
+        </div>
+      </div>
+
+      <!-- HT -->
+      <div class="col-md-3 col-xs-6">
+        <div class="input-group">
+          <div class="input-group-addon">HT</div>
+          <input type="number" class="form-control">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Substats -->
+    <div class="row">
+
+      <!-- HP -->
+      <div class="col-md-3 col-xs-6">
+        <div class="input-group">
+          <div class="input-group-addon">HP</div>
+          <input type="number" class="form-control">
+        </div>
+      </div>
+
+      <!-- Willpower -->
+      <div class="col-md-3 col-xs-6">
+        <div class="input-group">
+          <div class="input-group-addon">Will</div>
+          <input type="number" class="form-control">
+        </div>
+      </div>
+
+      <!-- Per -->
+      <div class="col-md-3 col-xs-6">
+        <div class="input-group">
+          <div class="input-group-addon">Per</div>
+          <input type="number" class="form-control">
+        </div>
+      </div>
+
+      <!-- FP -->
+      <div class="col-md-3 col-xs-6">
+        <div class="input-group">
+          <div class="input-group-addon">FP</div>
+          <input type="number" class="form-control">
+        </div>
+      </div>
+
+    </div>
+    <hr>
+    <!-- Languagesection -->
+    <div class="row">
+
+      <div class="col-md-6">
+        <span class="language-heading">Languages</span>
+
+        <div class="row">
+          <div class="col-md-3 col-xs-3">Name</div><div class="col-md-3 col-xs-3">Written</div><div class="col-md-3 col-xs-3">Spoken</div><div class="col-md-3 col-xs-3"></div>
+        </div>
+
+        <div class="language-list" data-bind="foreach: languageList">
+          <div class="row">
+            <div class="col-md-3 col-xs-3" data-bind="text: name"></div>
+            <div class="col-md-3 col-xs-3" data-bind="text: written"></div>
+            <div class="col-md-3 col-xs-3" data-bind="text: spoken"></div>
+            <div class="col-md-3 col-xs-3"><button class="btn btn-danger">Delete</button></div>
+          </div>
+          <hr>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <span class="language-heading">Add your language</span>
+        <div class="input-group">
+          <div class="input-group-addon">Name</div>
+          <input type="text" data-bind="value: currentLanguage().name" class="form-control">
+        </div>
+        <div class="input-group">
+          <div class="input-group-addon">Spoken</div>
+          <input type="text" data-bind="value: currentLanguage().spoken" class="form-control">
+        </div>
+        <div class="input-group">
+          <div class="input-group-addon">Written</div>
+          <input type="text" data-bind="value: currentLanguage().written" class="form-control">
+        </div>
+
+        <span data-bind="text: currentLanguage().name"></span>
+        <button class="add-button" data-bind="click: addCurrentLanguageToList">Add language</button>
+      </div>
+
+    </div>
+
+
+  </div>
+</div>

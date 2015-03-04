@@ -15,8 +15,12 @@ define(['jquery', 'knockout', './router', 'bootstrap', 'knockout-projections'], 
 
   ko.components.register('character-details', { require: 'components/character-details/character-details' });
 
+  ko.components.register('character-edit', { require: 'components/character-edit/character-edit' });
+
+  ko.components.register('character-add', { require: 'components/character-add/character-add' });
+
   // [Scaffolded component registrations will be inserted here. To retain this feature, don't remove this comment.]
 
   // Start the application
-  ko.applyBindings({ route: router.currentRoute, currentUser: router.currentUser });
+  ko.applyBindings({ route: router.currentRoute, isLoggedIn: router.isLoggedIn, userId: router.userId });
 });

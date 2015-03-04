@@ -14,7 +14,6 @@ define(['knockout', 'text!./character-details.html'], function(ko, templateMarku
     })
     .done(function (data) {
        self.character(data);
-       console.log(self.character());
     })
     .fail(function (jqXHR, textStatus) {
       alert("error: " + textStatus);

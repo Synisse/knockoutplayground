@@ -1,0 +1,46 @@
+.input-group-addon{
+  background-color: $bright;
+  border-color: $superbright;
+  color: #FFFFFF;
+}
+
+.form-control{
+  background-color: $main;
+  color: #FFFFFF;
+}
+
+.input-group{
+  margin-top:20px;
+}
+
+.add-button{
+  border: solid 2px $superbright;
+  border-radius: 10px;
+  // background-color: $dark;
+  background:
+    linear-gradient(
+      rgba(65, 30, 2, 0.0),
+      rgba(65, 30, 2, 0.0)
+    );
+
+  color: $superbright;
+  font-size: 20px;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.add-button:hover{
+  border: solid 2px $bright;
+  color: $bright;
+}
+
+.language-heading{
+  color: white;
+  font-size: 25px;
+}
+
+.language-list{
+  .row{
+    margin-top: 10px;
+  }
+}

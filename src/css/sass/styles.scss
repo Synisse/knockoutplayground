@@ -23,7 +23,7 @@ body{
 
 .component-background{
   background-color: $lightmain;
-  margin-top: -40px;
+  margin-top: -30px;
 }
 
 footer{
@@ -52,7 +52,7 @@ footer{
 $bgDefault      : #1c1f1c;
 $bgHighlight    : #497049;
 $colDefault     : #ffffff;
-$colHighlight   : #ffffff;
+$colHighlight   : #e7e7e7;
 $dropDown       : false;
 .navbar-default {
   background-color: $bgDefault;
@@ -82,7 +82,7 @@ $dropDown       : false;
     }
     > .active {
       > a, > a:hover, > a:focus {
-        color: $colHighlight;
+        color: $colDefault;
         background-color: $bgHighlight; }}
     > .open {
       > a, > a:hover, > a:focus {
@@ -118,6 +118,7 @@ $dropDown       : false;
     width: 305px;
     padding: 10px;
     padding-bottom: 0px;
+    background-color: $main;
 }
 
 .navbar-login-session
@@ -125,6 +126,11 @@ $dropDown       : false;
     padding: 10px;
     padding-bottom: 0px;
     padding-top: 0px;
+
+}
+
+.dropdown-menu{
+  background-color: $main;
 }
 
 .icon-size
@@ -149,3 +155,4 @@ $dropDown       : false;
 
 @import 'home.scss';
 @import 'character-item.scss';
+@import 'character-add.scss';

@@ -17,8 +17,8 @@
     <!-- endbuild -->
   </head>
   <body>
-    <nav-bar params="{route: route, currentUser: currentUser}"></nav-bar>
-    <div id="page" data-bind="component: { name: route().page, params: {route: route(), currentUser: currentUser()} }"></div>
+    <nav-bar params="{route: route, isLoggedIn: isLoggedIn}"></nav-bar>
+    <div id="page" data-bind="component: { name: route().page, params: {route: route(), userId: userId()} }"></div>
     <footer>
       <div class="container">
         <div class="row">
