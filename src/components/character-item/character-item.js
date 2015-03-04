@@ -10,7 +10,8 @@ define(['knockout', 'text!./character-item.html', 'jquery', 'crossroads'], funct
       self.characterEditUrl = ko.observable();
 
       self.routeToDetails = function(){
-        window.location.href = window.location.href +'/'+self.character._id;
+        // window.location.href = window.location.href +'/'+self.character._id;
+        console.log(self.character);
       };
 
       self.routeToEdit = function(){

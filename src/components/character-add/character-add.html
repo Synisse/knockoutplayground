@@ -14,7 +14,7 @@
       <div class="col-md-6 col-xs-12">
         <div class="input-group">
           <div class="input-group-addon">Name</div>
-          <input type="text" class="form-control">
+          <input type="text" class="form-control" data-bind="value: name">
         </div>
       </div>
     </div>
@@ -26,7 +26,7 @@
       <div class="col-md-3 col-xs-6">
         <div class="input-group">
           <div class="input-group-addon">ST</div>
-          <input type="number" class="form-control">
+          <input type="number" class="form-control" data-bind="value: st">
         </div>
       </div>
 
@@ -34,7 +34,7 @@
       <div class="col-md-3 col-xs-6">
         <div class="input-group">
           <div class="input-group-addon">DX</div>
-          <input type="number" class="form-control">
+          <input type="number" class="form-control" data-bind="value: dx">
         </div>
       </div>
 
@@ -42,7 +42,7 @@
       <div class="col-md-3 col-xs-6">
         <div class="input-group">
           <div class="input-group-addon">IQ</div>
-          <input type="number" class="form-control">
+          <input type="number" class="form-control" data-bind="value: iq">
         </div>
       </div>
 
@@ -50,7 +50,7 @@
       <div class="col-md-3 col-xs-6">
         <div class="input-group">
           <div class="input-group-addon">HT</div>
-          <input type="number" class="form-control">
+          <input type="number" class="form-control" data-bind="value: ht">
         </div>
       </div>
 
@@ -63,7 +63,7 @@
       <div class="col-md-3 col-xs-6">
         <div class="input-group">
           <div class="input-group-addon">HP</div>
-          <input type="number" class="form-control">
+          <input type="number" class="form-control" data-bind="value: hp">
         </div>
       </div>
 
@@ -71,7 +71,7 @@
       <div class="col-md-3 col-xs-6">
         <div class="input-group">
           <div class="input-group-addon">Will</div>
-          <input type="number" class="form-control">
+          <input type="number" class="form-control" data-bind="value: will">
         </div>
       </div>
 
@@ -79,7 +79,7 @@
       <div class="col-md-3 col-xs-6">
         <div class="input-group">
           <div class="input-group-addon">Per</div>
-          <input type="number" class="form-control">
+          <input type="number" class="form-control" data-bind="value: per">
         </div>
       </div>
 
@@ -87,7 +87,7 @@
       <div class="col-md-3 col-xs-6">
         <div class="input-group">
           <div class="input-group-addon">FP</div>
-          <input type="number" class="form-control">
+          <input type="number" class="form-control" data-bind="value: fp">
         </div>
       </div>
 
@@ -225,5 +225,8 @@
         <button class="add-button" data-bind="click: addCurrentSkillToList">Add Skill</button>
       </div>
     </div>
+
+    <button class="add-character-button" data-bind="click: publishCharacter">Submit character</button>
+
   </div>
 </div>

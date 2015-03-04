@@ -248,23 +248,35 @@ a {
 }
 
 /* line 32, sass/_character-add.scss */
+.add-character-button {
+  border: solid 2px #68BB68;
+  border-radius: 10px;
+  background: linear-gradient(rgba(65, 30, 2, 0), rgba(65, 30, 2, 0));
+  color: #68BB68;
+  font-size: 20px;
+  margin-top: 20px;
+  padding: 5px;
+  width: 100%;
+}
+
+/* line 49, sass/_character-add.scss */
 .add-button:hover {
   border: solid 2px #497049;
   color: #497049;
 }
 
-/* line 37, sass/_character-add.scss */
+/* line 54, sass/_character-add.scss */
 .language-heading {
   color: white;
   font-size: 25px;
 }
 
-/* line 43, sass/_character-add.scss */
+/* line 60, sass/_character-add.scss */
 .language-list .row {
   margin-top: 10px;
 }
 
-/* line 47, sass/_character-add.scss */
+/* line 64, sass/_character-add.scss */
 .language-list-item {
   background-color: #1C1F1C;
 }
