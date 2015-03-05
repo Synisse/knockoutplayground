@@ -108,7 +108,7 @@ define(['knockout', 'text!./character-add.html'], function(ko, templateMarkup) {
       var language = [];
       character.languages = self.languageList();
       character.advantages = self.advantageList();
-      character.disadvantages = self.advantageList();
+      character.disadvantages = self.disadvantageList();
       character.skills = self.skillList();
       return character;
     };

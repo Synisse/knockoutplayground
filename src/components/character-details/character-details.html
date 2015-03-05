@@ -4,6 +4,364 @@
 
       <h2>character-details</h2>
       <span data-bind="text: character().name"></span>
+
+
+
+
+
+
     </div>
+  </div>
+
+  <div class="row charactercontent">
+
+    <!-- HEADING -->
+
+    <div class="col-md-12 heading">
+      Character: <span data-bind="text: character().name"></span>
+      <span class="ownership">
+        by <span data-bind="text: character().owner"></span>
+      </span>
+    </div>
+
+    <!-- MAINSTATS -->
+    <div class="col-md-3">
+      <div class="statContainer">
+        <div class="statHeader">
+          Strength
+        </div>
+        <div class="statValue">
+          <span data-bind="text: character().st"></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="statContainer">
+        <div class="statHeader">
+          Dexterity
+        </div>
+        <div class="statValue">
+          <span data-bind="text: character().dx"></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="statContainer">
+        <div class="statHeader">
+          IQ
+        </div>
+        <div class="statValue">
+          <span data-bind="text: character().iq"></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="statContainer">
+        <div class="statHeader">
+          Health
+        </div>
+        <div class="statValue">
+          <span data-bind="text: character().ht"></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="statContainer">
+        <div class="statHeader">
+          Health Points
+        </div>
+        <div class="statValue">
+          <span data-bind="text: character().hp"></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="statContainer">
+        <div class="statHeader">
+          Willpower
+        </div>
+        <div class="statValue">
+          <span data-bind="text: character().will"></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="statContainer">
+        <div class="statHeader">
+          Perception
+        </div>
+        <div class="statValue">
+          <span data-bind="text: character().per"></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="statContainer">
+        <div class="statHeader">
+          FP
+        </div>
+        <div class="statValue">
+          <span data-bind="text: character().fp"></span>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="row charactercontent">
+
+    <!-- BASICS -->
+    <div class="col-md-3">
+
+      <div class="statContainer">
+        <div class="statHeader">
+          Basics
+        </div>
+
+        <div class="statLabel">
+          Basic Lift
+          <span class="statValueSmall">
+            <span data-bind="text: lift"></span>
+          </span>
+        </div>
+
+        <div class="statLabel">
+          Damage Thrust
+          <span class="statValueSmall">
+            NA
+          </span>
+        </div>
+
+        <div class="statLabel">
+          Damage Swing
+          <span class="statValueSmall">
+            NA
+          </span>
+        </div>
+
+        <div class="statLabel">
+          Basic Speed
+          <span class="statValueSmall">
+            <span data-bind="text: speed"></span>
+          </span>
+        </div>
+
+        <div class="statLabel">
+          Basic Move
+          <span class="statValueSmall">
+            <span data-bind="text: move"></span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ENCOUMBERANCE -->
+    <div class="col-md-3">
+      <div class="statContainer">
+        <div class="statHeader">
+          Encumberance
+        </div>
+
+        <div class="statLabel">
+          None(0)
+          <span class="statValueSmall">
+            <span data-bind="text: encumberanceNone"></span>
+          </span>
+        </div>
+
+        <div class="statLabel">
+          Light(1)
+          <span class="statValueSmall">
+            <span data-bind="text: encumberanceLight"></span>
+          </span>
+        </div>
+
+        <div class="statLabel">
+          Medium(2)
+          <span class="statValueSmall">
+            <span data-bind="text: encumberanceMedium"></span>
+          </span>
+        </div>
+
+        <div class="statLabel">
+          Heavy(3)
+          <span class="statValueSmall">
+            <span data-bind="text: encumberanceHeavy"></span>
+          </span>
+        </div>
+
+        <div class="statLabel">
+          X-Heavy(4)
+          <span class="statValueSmall">
+            <span data-bind="text: encumberanceXheavy"></span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOVE -->
+    <div class="col-md-3">
+      <div class="statContainer">
+        <div class="statHeader">
+          Move
+        </div>
+
+        <div class="statLabel">
+          BM*1
+          <span class="statValueSmall">
+            <span data-bind="text: moveOne"></span>
+          </span>
+        </div>
+
+        <div class="statLabel">
+          BM*0.8
+          <span class="statValueSmall">
+            <span data-bind="text: moveTwo"></span>
+          </span>
+        </div>
+
+        <div class="statLabel">
+          BM*0.6
+          <span class="statValueSmall">
+            <span data-bind="text: moveThree"></span>
+          </span>
+        </div>
+
+        <div class="statLabel">
+          BM*0.4
+          <span class="statValueSmall">
+            <span data-bind="text: moveFour"></span>
+          </span>
+        </div>
+
+        <div class="statLabel">
+          BM*0.2
+          <span class="statValueSmall">
+            <span data-bind="text: moveFive"></span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DODGE -->
+    <div class="col-md-3">
+      <div class="statContainer">
+        <div class="statHeader">
+          Dodge
+        </div>
+
+        <div class="statLabel">
+          Dodge
+          <span class="statValueSmall">
+            <span data-bind="text: dodgeOne"></span>
+          </span>
+        </div>
+
+        <div class="statLabel">
+          Dodge-1
+          <span class="statValueSmall">
+            <span data-bind="text: dodgeTwo"></span>
+          </span>
+        </div>
+
+        <div class="statLabel">
+          Dodge-2
+          <span class="statValueSmall">
+            <span data-bind="text: dodgeThree"></span>
+          </span>
+        </div>
+
+        <div class="statLabel">
+          Dodge-3
+          <span class="statValueSmall">
+            <span data-bind="text: dodgeFour"></span>
+          </span>
+        </div>
+
+        <div class="statLabel">
+          Dodge-4
+          <span class="statValueSmall">
+            <span data-bind="text: dodgeFive"></span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ADVANTAGES AND DISADVANTAGES -->
+  <div class="row charactercontent">
+
+    <!-- ADVANTAGES -->
+    <div class="col-md-6">
+      <div class="statContainer">
+        <div class="statHeader">
+          Advantages
+        </div>
+        <div data-bind="foreach: character().advantages">
+          <div class="statLabel">
+            <span data-bind="text: $data"></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- DISADVANTAGES -->
+    <div class="col-md-6">
+      <div class="statContainer">
+        <div class="statHeader">
+          Disadvantages
+        </div>
+        <div data-bind="foreach: character().disadvantages">
+          <div class="statLabel">
+            <span data-bind="text: $data"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row charactercontent">
+
+    <!--LANGUAGES-->
+    <div class="col-md-6">
+      <div class="statContainer">
+        <div class="statHeader">
+          Languages
+        </div>
+
+        <div class="row statLabel">
+          <div class="col-md-4">Name</div>
+          <div class="col-md-4">Spoken</div>
+          <div class="col-md-4">Written</div>
+        </div>
+
+        <div data-bind="foreach: character().languages">
+          <div class="row statLabel">
+            <div class="col-md-4"><span data-bind="text: name"></span></div>
+            <div class="col-md-4"><span data-bind="text: spoken"></span></div>
+            <div class="col-md-4"><span data-bind="text: written"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Skills-->
+    <div class="col-md-6">
+      <div class="statContainer">
+        <div class="statHeader">
+          Skills
+        </div>
+        <div data-bind="foreach: character().skills">
+          <div class="statLabel">
+            <span data-bind="text: $data"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>

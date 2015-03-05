@@ -1,0 +1,42 @@
+.charactercontent{
+  color: white;
+}
+
+.heading{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.ownership{
+  font-size: 20px;
+  color: $superbright;
+}
+
+.statHeader{
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.statValue{
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: $superbright;
+}
+
+.statContainer{
+  border: 2px solid $bright;
+  margin-bottom: 15px;
+}
+
+.statValueSmall{
+  // text-align: right;
+  float:right;
+  margin-right: 10px;
+}
+
+.statLabel{
+  margin-left: 10px;
+  border-bottom: 1px solid $bright;
+}

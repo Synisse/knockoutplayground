@@ -293,3 +293,53 @@ a {
   color: #b2bab4;
   border-top: 1px solid white;
 }
+
+/* line 1, sass/_character-detail.scss */
+.charactercontent {
+  color: white;
+}
+
+/* line 5, sass/_character-detail.scss */
+.heading {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* line 10, sass/_character-detail.scss */
+.ownership {
+  font-size: 20px;
+  color: #68BB68;
+}
+
+/* line 15, sass/_character-detail.scss */
+.statHeader {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* line 21, sass/_character-detail.scss */
+.statValue {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: #68BB68;
+}
+
+/* line 28, sass/_character-detail.scss */
+.statContainer {
+  border: 2px solid #497049;
+  margin-bottom: 15px;
+}
+
+/* line 33, sass/_character-detail.scss */
+.statValueSmall {
+  float: right;
+  margin-right: 10px;
+}
+
+/* line 39, sass/_character-detail.scss */
+.statLabel {
+  margin-left: 10px;
+  border-bottom: 1px solid #497049;
+}
