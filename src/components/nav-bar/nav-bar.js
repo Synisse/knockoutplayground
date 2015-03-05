@@ -19,6 +19,34 @@ define(['knockout', 'text!./nav-bar.html', 'jquery','jquerycookie','../../app/ro
       );
 
     self.isLoggedIn = ko.observable(false);
+
+    //check if user is already logged in
+    $.ajax({
+       url: "http://fathomless-ocean-5983.herokuapp.com/api/users/me",
+       //Set auth header
+       headers: {"Authorization": "Bearer " + $.cookie('token')}
+    })
+    .done(function (data) {
+     //On success set logging in to false (finishing loading animation)
+     self.isLoggingIn(false);
+     //Set logged in to true, to change GUI components etc
+     self.isLoggedIn(true);
+     //On success safe userdata in view model variable
+     self.currentUser(data);
+     //Set isLoggedIn in "rootscope" (TODO cleanup this mess)
+     router.isLoggedIn(self.isLoggedIn());
+     router.userId(self.currentUser()._id);
+
+    })
+    .fail(function (jqXHR, textStatus) {
+     //Failed to retrieve user information with given token
+    //  alert("error: " + textStatus);
+      self.isLoggedIn(false);
+    });
+
+
+
+
     self.isLoggingIn = ko.observable(false);
 
     this.logout = function(){

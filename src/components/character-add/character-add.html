@@ -1,13 +1,25 @@
 <!-- <h2>character-add</h2> -->
 <div class="component-background">
-  <div data-bind="visible: $root.isLoggedIn()">
-    <div>Is logged in</div>
-  </div>
-  <div data-bind="visible: !$root.isLoggedIn()">
-    <div>Is not logged in</div>
-  </div>
+
 
   <div class="container">
+
+    <div data-bind="visible: !$root.isLoggedIn()">
+      <div>You have to be logged in to add a character.</div>
+    </div>
+    <div data-bind="visible: $root.isLoggedIn()">
+
+    <div class="row">
+      <div class="col-md-6 col-xs-12">
+        <div class="character-add-heading">
+          Add your character
+          <div class="character-add-subheading">
+            Just fill in your data in the form below.
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <!-- Field: Name -->
     <div class="row">
@@ -229,4 +241,6 @@
     <button class="add-character-button" data-bind="click: publishCharacter">Submit character</button>
 
   </div>
+</div>
+
 </div>

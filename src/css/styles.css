@@ -280,3 +280,16 @@ a {
 .language-list-item {
   background-color: #1C1F1C;
 }
+
+/* line 68, sass/_character-add.scss */
+.character-add-heading {
+  font-size: 30px;
+  color: white;
+  margin-top: 20px;
+}
+/* line 72, sass/_character-add.scss */
+.character-add-heading .character-add-subheading {
+  font-size: 12px;
+  color: #b2bab4;
+  border-top: 1px solid white;
+}
