@@ -19,6 +19,8 @@ define(['jquery', 'knockout', './router', 'bootstrap', 'knockout-projections'], 
 
   ko.components.register('character-add', { require: 'components/character-add/character-add' });
 
+  ko.components.register('sign-up-page', { require: 'components/sign-up-page/sign-up-page' });
+
   // [Scaffolded component registrations will be inserted here. To retain this feature, don't remove this comment.]
 
   // Start the application

@@ -138,6 +138,12 @@ $dropDown       : false;
     font-size: 87px;
 }
 
+.login-bottom-section{
+  border-top: 1px solid $superbright;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
 .glyphicon-refresh-animate {
     -animation: spin .7s infinite linear;
     -webkit-animation: spin2 .7s infinite linear;

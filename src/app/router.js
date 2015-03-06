@@ -16,7 +16,8 @@ define(["knockout", "crossroads", "hasher"], function(ko, crossroads, hasher) {
             { url: 'character',     params: { page: 'character-page' } },
             { url: 'character/{id}', params:{page: 'character-details'}},
             { url: 'character/{id}/edit', params:{page: 'character-edit'}},
-            { url: 'addcharacter', params:{page: 'character-add'}}
+            { url: 'addcharacter', params:{page: 'character-add'}},
+            {url: 'signup', params: { page: 'sign-up-page' } }
         ]
     });
 

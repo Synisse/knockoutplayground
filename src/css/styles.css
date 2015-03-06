@@ -146,6 +146,13 @@ footer {
 }
 
 /* line 141, sass/styles.scss */
+.login-bottom-section {
+  border-top: 1px solid #68BB68;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 147, sass/styles.scss */
 .glyphicon-refresh-animate {
   -animation: spin .7s infinite linear;
   -webkit-animation: spin2 .7s infinite linear;
